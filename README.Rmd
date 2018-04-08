@@ -62,7 +62,7 @@ date_time_plot = ggplot(commit_dt[project %in% repo_commit_count_dt$project],
   labs(y='', x='', color='') +
   theme_minimal() + 
   theme(legend.position="bottom",
-        legend.text=element_text(size=5))
+        legend.text=element_text(size=7))
 
 # plot top 10 repos by commit count
 repo_bar_plot = ggplot(repo_commit_count_dt[1:min(10, .N), ], aes(y=N, x=project)) +
